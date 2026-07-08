@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://portagolf.com.au/sitemap.xml
