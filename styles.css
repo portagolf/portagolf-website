@@ -150,29 +150,26 @@ h1 {
 }
 
 .hero-panel {
-  padding: 34px;
-  border: 1px solid var(--line);
+  min-height: 470px;
   border-radius: 28px;
-  background: rgba(8,46,35,0.72);
+  overflow: hidden;
+  border: 1px solid rgba(255,255,255,0.12);
   box-shadow: var(--shadow);
+
+  background-image:
+    linear-gradient(rgba(0,0,0,0.10), rgba(0,0,0,0.10)),
+    url("assets/portagolf-hero-evening.png");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .hero-panel span,
-.duration {
-  color: var(--muted);
-  font-size: 14px;
-  font-weight: 700;
+.hero-panel strong,
+.hero-panel p {
+  display: none;
 }
-
-.hero-panel strong {
-  display: block;
-  margin: 8px 0 14px;
-  font-size: 62px;
-  line-height: 1;
-  letter-spacing: -0.06em;
-}
-
-.hero-panel p { color: var(--muted); line-height: 1.6; margin: 0; }
 
 .section {
   padding: 100px 7vw;
@@ -322,7 +319,11 @@ h2 {
   .site-header { padding: 0 22px; }
   .nav { display: none; }
   .hero { grid-template-columns: 1fr; padding-top: 80px; }
-  .hero-panel { max-width: 360px; }
+  .hero-panel {
+  width: 100%;
+  max-width: 620px;
+  min-height: 360px;
+}
   .section-grid, .feature-grid, .pricing-grid { grid-template-columns: 1fr; }
 }
 
